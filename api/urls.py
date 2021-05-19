@@ -1,9 +1,8 @@
-from django.urls import path
-from .views import SMSList, SMSDetail
+from rest_framework.routers import SimpleRouter
+from .views import SMSViewSet, SMSDetailViewSet
 
-app_name = 'smses'
-
-urlpatterns = [
-    path('', SMSList.as_view(), name="sms-list"),
-    path('<str:pk>/', SMSDetail.as_view(), name="sms-detail"),
-]
+# Generate all URL endpoints for SMSes
+router = SimpleRouter()
+router.register('', SMSViewSet, basename="sms")
+router.register('', SMSDetailViewSet, basename="sms")
+urlpatterns = router.urls

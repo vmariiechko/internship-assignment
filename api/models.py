@@ -3,7 +3,9 @@ from django.contrib.auth.models import User
 
 
 class SMS(models.Model):
-    """Model represents SMS message with its number of views."""
+    """
+    The model represents SMS messages with its author and number of views.
+    """
 
     author = models.ForeignKey(User, on_delete=models.CASCADE)
     message = models.CharField(max_length=160)

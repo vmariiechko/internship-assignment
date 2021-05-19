@@ -3,7 +3,9 @@ from .models import SMS
 
 
 class SMSListSerializer(serializers.ModelSerializer):
-    """Serializer for listing all SMSes with full data."""
+    """
+    Serializer for listing SMSes with all data.
+    """
 
     # Convert author id to his username
     author = serializers.CharField(source='author.username')
@@ -14,7 +16,9 @@ class SMSListSerializer(serializers.ModelSerializer):
 
 
 class SMSDetailSerializer(serializers.ModelSerializer):
-    """Serializer for single SMS information."""
+    """
+    Serializer for single SMS data.
+    """
 
     class Meta:
         model = SMS
