@@ -15,10 +15,11 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
-from api.views import redirect_view
+from api.views import redirect_view, APIOverview
 
 urlpatterns = [
+    path('', redirect_view),
+    path('api/', APIOverview.as_view()),
+    path('api/smses/', include('api.urls')),
     path('admin/', admin.site.urls),
-    path('api/', include('api.urls')),
-    path('', redirect_view)
 ]

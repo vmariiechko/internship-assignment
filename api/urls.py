@@ -1,9 +1,9 @@
-from django.urls import path, include
-from .views import APIOverview, InitialView
+from django.urls import path
+from .views import SMSList, SMSDetail
 
-app_name = 'api'
+app_name = 'smses'
 
 urlpatterns = [
-    path('', APIOverview.as_view(), name="api-overview"),
-    path('initial/', InitialView.as_view(), name="initial"),
+    path('', SMSList.as_view(), name="sms-list"),
+    path('<str:pk>/', SMSDetail.as_view(), name="sms-detail"),
 ]
