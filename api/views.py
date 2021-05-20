@@ -82,6 +82,7 @@ class SMSDetailViewSet(viewsets.ViewSet):
         """Retrieves SMS by id and increments the number of views."""
 
         sms = self.get_object(sms_id)
+        self.check_object_permissions(request, sms)
         data = {
             "views_count": sms.views_count + 1
         }
@@ -89,7 +90,6 @@ class SMSDetailViewSet(viewsets.ViewSet):
         if serializer.is_valid():
             serializer.save()
             return Response(serializer.data, status=status.HTTP_200_OK)
-        return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
 
     def update(self, request, sms_id=None, *args, **kwargs):
         """Updates SMS by id and sets the number of views to zero."""
