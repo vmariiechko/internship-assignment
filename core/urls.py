@@ -13,6 +13,7 @@ urlpatterns = [
     path('api/smses/', include('api.urls')),
     path('api-auth/', include('rest_framework.urls')),
     path('api/token/', TokenObtainPairView.as_view(), name='token_obtain_pair'),
+    path('accounts/profile/', redirect_view),
     path('api/token/refresh/', TokenRefreshView.as_view(), name='token_refresh'),
     path('admin/', admin.site.urls),
 ]
