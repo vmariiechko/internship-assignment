@@ -120,6 +120,13 @@ class CreateSMSTestCase(APITestCase):
         self.assertEqual(serializer.data['views_count'], 0)
         self.assertEqual(response.status_code, status.HTTP_201_CREATED)
 
+    def test_create_sms_authenticated_over_message_limit(self):
+        # Create SMS as an authenticated user with more than 160 characters
+        data = {'message': "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent in risus maximus, ultrices eros ac, malesuada purus. Quisque volutpat neque nisl, eget dictum mauris mollis et."}
+        response = self.client.post(self.url, data)
+        self.assertEqual(response.data['message'][0], 'Ensure this field has no more than 160 characters.')
+        self.assertEqual(response.status_code, status.HTTP_400_BAD_REQUEST)
+
     def test_create_sms_un_authenticated(self):
         # Try to authenticate not existed user
         self.client.force_authenticate(user=None)
