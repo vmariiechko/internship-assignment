@@ -134,6 +134,3 @@ dmypy.json
 
 # Pycharm configuration folder
 .idea/
-
-# SQLite Database
-db.sqlite3
