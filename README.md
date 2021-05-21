@@ -19,7 +19,7 @@
     * [Widok kasowania wiadomości](#widok-kasowania-wiadomości)
 - [Testy jednostkowe](#testy-jednostkowe)
 - [Rozmieszczenie aplikacji](#rozmieszczenie-aplikacji)
-- [Podziękowanie](#dziękuję-za-uwagę-i-czekam-na-zwrotną-informację)
+- [Podziękowanie](#dziękuję-bardzo-za-uwagę-i-czekam-na-zwrotną-informację)
 
 ---
 
