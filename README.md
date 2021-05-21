@@ -19,6 +19,7 @@
     * [Widok kasowania wiadomości](#widok-kasowania-wiadomości)
 - [Testy jednostkowe](#testy-jednostkowe)
 - [Rozmieszczenie aplikacji](#rozmieszczenie-aplikacji)
+- [Podziękowanie](#dziękuję-za-uwagę-i-czekam-na-zwrotną-informację)
 
 ---
 
@@ -69,7 +70,7 @@ zapisanych oraz edycji krótkich tekstów (do 160 znaków).
 
 ### Uwierzytelnianie
 
-> Do przetestowania aplikacji podaje do dyspozycji dwa konta: <br/>
+> Do przetestowania aplikacji podaję do dyspozycji dwa konta: <br/>
 > username: ```Jan``` password: ```nowakhaslo``` <br/>
 > username: ```Zofia``` password: ```nowakhaslo```
 
@@ -227,6 +228,10 @@ na ogólne wrażenie rozwiązania zadania.
 
 ---
 
+### Dziękuję bardzo za uwagę i czekam na zwrotną informację!
+
+---
+
 > Gmail [vmariiechko@gmail.com](mailto:vmariiechko@gmail.com) &nbsp;&middot;&nbsp;
 > GitHub [@vmariiechko](https://github.com/vmariiechko) &nbsp;&middot;&nbsp;
 > LinkedIn [@mariiechko](https://www.linkedin.com/in/mariiechko/)
@@ -255,8 +260,8 @@ na ogólne wrażenie rozwiązania zadania.
 [refresh2]: https://imgur.com/BqyhdFN.png
 [smses]: https://imgur.com/VPqAq0c.png
 [sms]: https://imgur.com/wnf1UkY.png
-[create1]: https://imgur.com/4YyhVly.png
-[create2]: https://imgur.com/hzCotib.png
+[create1]: https://imgur.com/EeMs5XJ.png
+[create2]: https://imgur.com/28X5lUV.png
 [edit1]: https://imgur.com/DqJ8UGV.png
 [edit2]: https://imgur.com/UvhVM6i.png
 [delete]: https://imgur.com/sCREpre.png
